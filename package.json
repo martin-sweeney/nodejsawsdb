@@ -1,0 +1,19 @@
+{
+  "name": "nodejsawsdb",
+  "version": "1.0.0",
+  "description": "node test with aws db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martin-sweeney/nodejsawsdb.git"
+  },
+  "author": "happy hobbit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martin-sweeney/nodejsawsdb/issues"
+  },
+  "homepage": "https://github.com/martin-sweeney/nodejsawsdb#readme"
+}
