@@ -1,11 +1,17 @@
 var mysql = require('mysql');
 
+var db_host = process.env.MSTEST_DB_HOST;
+
 var connection = mysql.createConnection({
-	host: "172.17.0.2",
+	host: db_host,
 	user: "sqluser",
 	password: "1234",
 	database: "awsnodedb"
 });
+
+exports.getHost=function(){
+	return db_host;
+}
 
 exports.connectDB=function(){
 	connection.connect(function(err) {

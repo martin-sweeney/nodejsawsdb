@@ -8,9 +8,7 @@ const app =  express();
 const port =  3000;
 
 app.get('/',  (req,  res) =>  {
-//	dbase.connectDB();
-
-	res.send("The date and time is currently: "+ dt.myDateTime());
+	res.send("The date and time is currently: "+ dt.myDateTime()+ " the dbhost is: " + dbase.getHost());
 });
 
 app.get('/db',  (req,  res) =>  {
