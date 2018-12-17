@@ -40,6 +40,6 @@ phases:
       - echo Build stage successfully completed on `date`
       - echo Pushing the Docker image...
       - docker push $IMAGE_URI
-      - printf '[{"name":"mstest-dev","imageUri":"%s"}]' "$IMAGE_URI" > images.json
+      - printf '[{"name":"mstest","imageUri":"%s"}]' "$IMAGE_URI" > images.json
 artifacts:
 files: images.json
