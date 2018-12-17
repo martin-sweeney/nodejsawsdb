@@ -12,5 +12,5 @@ RUN npm install
 #bundle our server source code
 COPY . .
 
-EXPOSE 80
+EXPOSE 3000 
 CMD ["npm", "start"]
