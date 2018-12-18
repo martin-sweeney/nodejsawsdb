@@ -9,7 +9,6 @@
 # IMAGE_TAG
 # IMAGE_NAME
 
-
 ###############################
 # DONT CHANGE THIS VERSION 
 # ITS FOR AWS NOT THIS FILES VERSION
@@ -39,7 +38,8 @@ phases:
       - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then exit 1; fi"
       - echo Build stage successfully completed on `date`
       - echo Pushing the Docker image...
+      - echo $IMAGE_URI
       - docker push $IMAGE_URI
-      - printf '[{"name":"$IMAGE_NAME","imageUri":"%s"}]' "$IMAGE_URI" > images.json
+      #- printf '[{"name":"mstestapp","imageUri":"%s"}]' "$IMAGE_URI" > images.json
 artifacts:
 files: images.json
