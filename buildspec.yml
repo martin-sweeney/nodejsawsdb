@@ -41,5 +41,5 @@ phases:
       - echo $IMAGE_URI
       - docker push $IMAGE_URI
       #- printf '[{"name":"mstestapp","imageUri":"%s"}]' "$IMAGE_URI" > images.json
-artifacts:
+#artifacts:
 #files: images.json
